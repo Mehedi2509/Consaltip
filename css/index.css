@@ -109,6 +109,37 @@
     margin: 0 2px;
 }
 
+.team-slider .slick-track{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.team-slider .slick-dots{
+    display: flex;
+    justify-content: center;
+}
+
+.team-slider .slick-dots li{
+    list-style: none;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.team-slider .slick-dots .slick-active button{
+    color: whitesmoke;
+    background-color: #575959;
+    transform: scale(1.1);
+    font-weight: 400;
+}
+
+.team-slider .slick-dots li button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+}
+
 /* Brand Logos Section */
 .brand-logos{
     display: flex;
