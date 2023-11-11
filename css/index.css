@@ -86,16 +86,131 @@
     padding: 0;
 }
 
+/* ----------------------
+      Case studies
+------------------------ */
+.case-studies{
+    background-color: #033F47;
+    padding: 80px 0;
+}
+
+.case-studies-title{
+    width: 50%;
+}
+
+.case-slider{
+    margin: 50px 0;
+}
+.case-slider .slick-track{
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-slider .slick-arrow{
+    display: none;
+}
+
+
+.case-slider h3{
+    white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+.case-slider h3:hover{
+    text-decoration: underline;
+}
+
+.case-slider .slick-slide{
+    margin: 0 25px;
+}
+
+.case-slider .slick-slide img:hover{
+    transform: scale(1.02);
+    transition: all 0.6s;
+
+}
+
+.team-prev-btn, .team-next-btn{
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 1px solid #033F47;
+    color: #033F47;
+    border-radius: 50%;
+}
+
+.team-prev-btn:hover, .team-next-btn:hover{
+    background: #E0F780;
+    color: #033F47;
+    border: none;
+    transition: all 1s;
+}
+
+
+/* testimonial section */
+
+.testimonial-slider{
+    margin: 50px 0;
+}
+
+.testimonial-slider .slick-arrow::after{
+    display: none;
+}
+
+.testimonial-slider .slick-arrow::before{
+    display: none;
+}
+
+.testimonial-prev-btn, .testimonial-next-btn{
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 1px solid #033F47;
+    color: #033F47;
+    border-radius: 50%;
+}
+
+.testimonial-prev-btn:hover, .testimonial-next-btn:hover{
+    background: #E0F780;
+    border: none;
+    transition: all 1s;
+}
+
+
+
+
 /* Blog & Articles Section */
 .blog-articles-section{
     background-color: #033F47;
     padding: 100px 0;
 }
 
+
+
+
 /* Team Section */
 .team-section{
     padding: 80px 0 50px;
 }
+
+.case-prev-btn, .case-next-btn{
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+}
+
+.case-prev-btn:hover, .case-next-btn:hover{
+    background: #E0F780;
+    border: none;
+    transition: all 1s;
+}
+
 
 .team-member-img{
     width: 100%;
@@ -114,6 +229,36 @@
     justify-content: space-between;
     gap: 25px;
 }
+
+.team-slider .slick-prev{
+    display: none;
+}
+
+.team-slider .slick-next{
+    display: none;
+}
+
+.team-slider .slick-slide:hover{
+    transform: scale(1.03);
+    transition: all 0.5s;
+
+    .team-slide-content{
+        position: absolute;
+        top: 215px;
+        background-color: #033F47;
+        opacity: 0.9;
+        color: white;
+        width: 100%;
+    }
+
+    .team-icons a{
+        color: white;
+    }
+    .team-icons a:hover{
+        color: #E0F780;
+    }
+}
+
 
 .team-slider .slick-dots{
     display: flex;
@@ -139,6 +284,7 @@
     border-radius: 50%;
     border: none;
 }
+
 
 /* Brand Logos Section */
 .brand-logos{
@@ -299,6 +445,10 @@
 
     .slide-btn-top{
         display: none;
+    }
+
+    .case-studies-title{
+        width: 100%;
     }
     
     .useful-link-menu{
