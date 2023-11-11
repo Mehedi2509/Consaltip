@@ -213,6 +213,10 @@ margin-bottom: 20px;
     transition: all 1s;
 }
 
+.team-slider .slick-track{
+    display: flex;
+    gap: 25px;
+}
 
 .team-member-img{
     width: 100%;
