@@ -49,6 +49,13 @@
     color: white;
 }
 
+.slick-arrow{
+    display: none !important;
+}
+
+
+
+
 /* Header section */
 .navbar-container{
     width: 100%;
@@ -105,11 +112,6 @@
     display: flex;
     justify-content: space-between;
 }
-
-.case-slider .slick-arrow{
-    display: none;
-}
-
 
 .case-slider h3{
     white-space: nowrap;
@@ -222,20 +224,6 @@ margin-bottom: 20px;
     text-decoration: none;
     color: #033F47;
     margin: 0 2px;
-}
-
-.team-slider .slick-track{
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-.team-slider .slick-prev{
-    display: none;
-}
-
-.team-slider .slick-next{
-    display: none;
 }
 
 .team-slider .slick-slide:hover{
