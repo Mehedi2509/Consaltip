@@ -24,7 +24,7 @@
 <body>
 
   <!-- Hero Section -->
-  <section class="hero-section text-white mb-5">
+  <section class="hero-section text-white pb-5">
 
     <!-- Header section -->
     <header class="p-3">
@@ -179,9 +179,19 @@
   </section>
 
   <!-- About us -->
-  <section class="about-us my-5">
+  <section class="about-us">
+
+    <div class="scrolldown-btn-wrapper">
+      <a href="#" id="scrolldown" class="scrolldown-btn">
+        <i class="fa-solid fa-arrow-down-long"></i>
+        <div class="rounded-text rotating">
+          <img src="images/Group.png" alt="scroll bottom" />
+        </div>
+      </a>
+    </div>
+
     <div class="container-md">
-      <div class="row g-5 mt-5 company-story align-items-center p-lg-5">
+      <div class="row g-5 company-story align-items-center px-lg-5">
         <div class="col-md-6 col-sm-12">
           <img src="images/company-story.png" alt="Company Story" width="100%" />
         </div>
@@ -265,43 +275,69 @@
   </section>
 
   <!-- Our work process -->
-  <section class="our-work-process my-5 py-5">
+  <section class="our-work-process">
 
     <!-- efficient process -->
-    <div class="efficient-process container-md mb-lg-5">
-      <div class="efficient-process-title text-center mx-auto">
-        <h2 class="fw-bold mb-3">A simple yet powerful and efficient process</h2>
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa libero egestas
-          malesuada viverra gravida libero cursus nulla leo.</p>
-      </div>
-      <div class="row gx-5 mt-5 align-items-center">
-        <div class="col-sm-12 col-md-6">
-          <img src="images/efficient-process.png" alt="Efficient process image" width="100%" />
+    <div class="efficient-process">
+      <div class="container-md mb-lg-5 p-0">
+        <div class="efficient-process-title text-center mx-auto">
+          <h1 class="fw-bold mb-3">A simple yet powerful and efficient process</h1>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa libero egestas
+            malesuada viverra gravida libero cursus nulla leo.</p>
         </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="d-flex mb-5 mt-4 pe-5 fw-bold">
-            <img src="images/Analysis.png" alt="Analysis icon image"
-              class="analysis-icon bg-warning p-2 rounded-circle me-4" />
-            <div>
-              <h3>1. Analysis & Research</h3>
-              <span class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas
-                ullamcorper.</span>
-            </div>
+        <div class="row mt-5 align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <img src="images/efficient-process.png" alt="Efficient process image" width="100%" />
           </div>
-          <div class="d-flex align-items-center mt-5 mb-5 fw-bold">
-            <img src="images/Execution.png" alt="Education icon image" class="bg-warning p-2 rounded-circle me-4" />
-            <h4>2. Education</h4>
-          </div>
-          <div class="d-flex align-items-center my-5 fw-bolder">
-            <img src="images/Launch.png" alt="Launch icon image" class="bg-warning p-2 rounded-circle me-4" />
-            <h5>3. Launch</h5>
+          <div class="col-sm-12 col-md-6">
+            <ul class="accordion">
+              <li>
+                <label for="first">
+                  <div class="accordion-title">
+                    <img src="images/Analysis.png" alt="Analysis icon image" />
+                    <h2>1. Analysis & Research</h2>
+                  </div>
+                </label>
+                <input type="radio" name="accordion" id="first" checked>
+                <div class="accordion-content">
+                  <p class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas
+                    ullamcorper.</p>
+                </div>
+              </li>
+              <li class="accordion-second">
+                <label for="second">
+                  <div class="accordion-title">
+                    <img src="images/Execution.png" alt="Analysis icon image" />
+                    <h2>2. Education</h2>
+                  </div>
+                </label>
+                <input type="radio" name="accordion" id="second">
+                <div class="accordion-content">
+                  <p class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas
+                    ullamcorper.</p>
+                </div>
+              </li>
+              <li>
+                <label for="third">
+                  <div class="accordion-title">
+                    <img src="images/Launch.png" alt="Analysis icon image" />
+                    <h2>3. Launch</h2>
+                  </div>
+                </label>
+                <input type="radio" name="accordion" id="third">
+                <div class="accordion-content">
+                  <p class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas
+                    ullamcorper.</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Free consultation -->
-    <div class="free-consultation container-md mt-5">
+    <div class="free-consultation container-md">
       <div class="row align-items-center p-0 mx-0">
         <div class="col-md-6 col-sm-12 p-0">
           <div class="w-75 py-5 mx-auto">
@@ -340,37 +376,37 @@
           and to use should be inspired.</p>
       </div>
       <div>
-        <img src="images/studies-1.jpg" alt="" width="100%" />
+        <img src="images/studies-2.jpg" alt="" width="100%" />
         <h3>We blend consult multiple ways for user</h3>
         <p>This project pretty excited to announce that we just got nominated at the Webby Awards! easy to understand
           and to use should be inspired.</p>
       </div>
       <div>
-        <img src="images/studies-1.jpg" alt="" width="100%" />
+        <img src="images/studies-3.jpg" alt="" width="100%" />
         <h3>We blend consult multiple ways for user</h3>
         <p>This project pretty excited to announce that we just got nominated at the Webby Awards! easy to understand
           and to use should be inspired.</p>
       </div>
       <div>
-        <img src="images/studies-1.jpg" alt="" width="100%" />
+        <img src="images/studies-4.jpg" alt="" width="100%" />
         <h3>We blend consult multiple ways for user</h3>
         <p>This project pretty excited to announce that we just got nominated at the Webby Awards! easy to understand
           and to use should be inspired.</p>
       </div>
       <div>
-        <img src="images/studies-1.jpg" alt="" width="100%" />
+        <img src="images/studies-5.jpg" alt="" width="100%" />
         <h3>We blend consult multiple ways for user</h3>
         <p>This project pretty excited to announce that we just got nominated at the Webby Awards! easy to understand
           and to use should be inspired.</p>
       </div>
       <div>
-        <img src="images/studies-1.jpg" alt="" width="100%" />
+        <img src="images/studies-6.jpg" alt="" width="100%" />
         <h3>We blend consult multiple ways for user</h3>
         <p>This project pretty excited to announce that we just got nominated at the Webby Awards! easy to understand
           and to use should be inspired.</p>
       </div>
       <div>
-        <img src="images/studies-1.jpg" alt="" width="100%" />
+        <img src="images/studies-7.jpg" alt="" width="100%" />
         <h3>We blend consult multiple ways for user</h3>
         <p>This project pretty excited to announce that we just got nominated at the Webby Awards! easy to understand
           and to use should be inspired.</p>

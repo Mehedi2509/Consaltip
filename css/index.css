@@ -1,3 +1,7 @@
+.body{
+    background: #F8F8F1;
+}
+
 .hero-section{
     background-color: #033F47;
 
@@ -64,6 +68,72 @@
 }
 
 
+
+/* -------------------
+     About section
+--------------------- */
+.about-us{
+    padding-top: 180px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.scrolldown-btn-wrapper{
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url(../images/scroll-down-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+    display: block;
+}
+
+.scrolldown-btn{
+    margin: 100px 72px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #E0F780;
+    width: 135px;
+    height: 135px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.scrolldown-btn i{
+    color: #080f10;
+    font-size: 34px;
+    position: absolute;
+}
+
+.rounded-text{
+    text-transform: uppercase;
+    -webkit-transform: rotate(-1180deg);
+    transform: rotate(-180deg);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+.rotating{
+    -webkit-animation: rotating 12s linear infinite;
+    animation: rotating 12s linear infinite;
+}
+
+@keyframes rotating{
+    100%{transform: rotate(180deg);}
+}
+
+
 /* Service section */
 .service-title{
     width: 50%;
@@ -73,25 +143,83 @@
 /* ------------------
    Our work process
 -------------------- */
+.efficient-process{
+    background-color: #f8f8f1;
+    padding: 100px 0;
+}
+
 .efficient-process-title{
     width: 50%;
 }
 
-.analysis-icon{
-    width: 70px;
-    height: 70px;
-}
-
-.free-consultation{
-    background-color: #033F47;
-    background-image: url(../images/free-consultation-bg.png);
+.accordion{
     width: 100%;
     height: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 0;
+    margin: 0;
 }
+
+.accordion-title{
+    display: flex;
+    align-items: center;
+
+}
+
+.accordion li{
+    list-style: none;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.accordion-second{
+    margin: 30px 0;
+}
+
+.accordion label + input[type="radio"]{
+    display: none;
+}
+
+.accordion-content{
+    display: flex;
+    justify-content: end;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.accordion-content p{
+    width: 75%;
+    color: gray;
+}
+
+.accordion label + input[type="radio"]:checked + .accordion-content{
+    max-height: 100px;
+}
+
+.accordion-title img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: #E0F780;
+    border: 1px solid #E0F780;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.accordion-title img:hover{
+    border: 1px solid #033F47;
+    transition: border 0.8s;
+}
+
+
+.free-consultation{
+    background-image: url(../images/free-consultation-bg.png);
+    background-color: #033F47;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
 
 /* ----------------------
       Case studies

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        .accordion{
+            width: 500px;
+            margin: 200px auto;
+        }
+
+        .accordion-title{
+            display: flex;
+            align-items: center;
+
+        }
+
+        .accordion li{
+            list-style: none;
+            margin-bottom: 20px;
+            padding: 20px 40px;
+            background-color: aliceblue;
+        }
+
+        .accordion label + input[type="radio"]{
+            display: none;
+        }
+
+        .accordion-content{
+            display: flex;
+            justify-content: end;
+            /* width: 60%; */
+            padding: 0 10px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s;
+        }
+
+        .accordion-content p{
+            width: 75%;
+            color: gray;
+        }
+
+        .accordion label + input[type="radio"]:checked + .accordion-content{
+            max-height: 200px;
+        }
+
+        .accordion-title img{
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            background-color: #E0F780;
+            border: 1px solid #E0F780;
+            border-radius: 50%;
+            margin-right: 25px;
+        }
+
+        .accordion-title img:hover{
+            border: 1px solid #033F47;
+            transition: border 0.8s;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="accordion">
+        <li>
+            <label for="first">
+                    <div class="accordion-title">
+                        <img src="images/Analysis.png" alt="Analysis icon image" />
+                      <h2>1. Analysis & Research</h2>
+                    </div>
+            </label>
+            <input type="radio" name="accordion" id="first" checked>
+            <div class="accordion-content">
+                <p class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas
+                    ullamcorper.</p>
+            </div>
+        </li>
+        <li>
+            <label for="second">
+                    <div class="accordion-title">
+                        <img src="images/Execution.png" alt="Analysis icon image" />
+                      <h2>2. Education</h2>
+                    </div>
+            </label>
+            <input type="radio" name="accordion" id="second">
+            <div class="accordion-content">
+                <p class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas
+                    ullamcorper.</p>
+            </div>
+        </li>
+        <li>
+            <label for="third">
+                    <div class="accordion-title">
+                        <img src="images/Launch.png" alt="Analysis icon image" />
+                      <h2>3. Launch</h2>
+                    </div>
+            </label>
+            <input type="radio" name="accordion" id="third">
+            <div class="accordion-content">
+                <p class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipis elit nibh egestas
+                    ullamcorper.</p>
+            </div>
+        </li>
+    </ul>
+
+
+</body>
+</html>
