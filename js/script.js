@@ -106,11 +106,11 @@ $('.case-slider').slick({
 
 $('.case-prev-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-prev').trigger('click');
+    $('.case-slider .slick-prev').trigger('click');
 });
 $('.case-next-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-next').trigger('click');
+    $('.case-slider .slick-next').trigger('click');
 });
 
 

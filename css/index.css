@@ -201,7 +201,24 @@
     gap: 25px;
 }
 
-.services-slider .slide{
+.service-slide{
+    background-color: #fff;
+}
+
+.service-slide:hover{
+    background-color: #E0F780;
+    transition: all 0.5s ease-out;
+    opacity: 0.9;
+
+    .service-slide-img{
+        transform: rotateY(-360deg);
+        transition: transform 0.5s;
+    }
+}
+
+.service-slide-img{
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
 }
 
 
@@ -260,6 +277,7 @@
 
 .accordion label + input[type="radio"]:checked + .accordion-content{
     max-height: 100px;
+    transition: max-height 0.5s;
 }
 
 .accordion-title img{
