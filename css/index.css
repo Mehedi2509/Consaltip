@@ -67,6 +67,60 @@
     align-items: center;
 }
 
+.hero-slider .slick-dots{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 90%;
+}
+
+.hero-slider .slick-dots li{
+    list-style: none;
+    border: 3px solid transparent;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+}
+
+.hero-slider .slick-dots li button{
+    font-size: 0;
+    line-height: 14px;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #c3e4de;
+    border-radius: 50%;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    border: none;
+
+}
+
+.hero-slider .slick-dots li:hover{
+    border: 3px solid #E0F780;
+    border-radius: 50%;
+    transition: border 1s;
+}
+
+.hero-slider .slick-dots .slick-active{
+    transform: scale(1.1);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    border-color: #e0f780;
+}
+
+.hero-slider .slick-dots .slick-active button{
+    font-size: 16px;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        background: transparent;
+}
+
 
 
 /* -------------------
@@ -117,7 +171,7 @@
 
 .rounded-text{
     text-transform: uppercase;
-    -webkit-transform: rotate(-1180deg);
+    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
     color: #fff;
     font-weight: bold;
@@ -134,9 +188,20 @@
 }
 
 
-/* Service section */
+/* ------------------------
+      Service section
+--------------------------- */
 .service-title{
     width: 50%;
+}
+
+.services-slider .slick-track{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.services-slider .slide{
 }
 
 
@@ -281,6 +346,9 @@ margin-bottom: 20px;
 
 
 /* testimonial section */
+.testimonial{
+    margin: 100px auto;
+}
 
 .testimonial-slider{
     margin: 50px 0;
@@ -307,6 +375,11 @@ margin-bottom: 20px;
     background: #E0F780;
     border: none;
     transition: all 1s;
+}
+
+.testimonial-slider-content h5{
+    width: 70%;
+    text-align: justify;
 }
 
 
@@ -565,6 +638,15 @@ margin-bottom: 20px;
 
     .slide-btn-top{
         display: none;
+    }
+
+    .testimonial-slider-content{
+        text-align: center;
+    }
+
+    .testimonial-slider-content h5{
+        width: 80%;
+        margin: 0 auto;
     }
 
     .case-studies-title{
