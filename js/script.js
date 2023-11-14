@@ -131,7 +131,7 @@ $('.testimonial-slider').slick({
     responsive: [{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
             }
         },
@@ -150,11 +150,11 @@ $('.testimonial-slider').slick({
 
 $('.testimonial-prev-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-prev').trigger('click');
+    $('.testimonial-slider .slick-prev').trigger('click');
 });
 $('.testimonial-next-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-next').trigger('click');
+    $('.testimonial-slider .slick-next').trigger('click');
 });
 
 
@@ -202,11 +202,11 @@ $('.team-slider').slick({
 
 $('.team-prev-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-prev').trigger('click');
+    $('.team-slider .slick-prev').trigger('click');
 });
 $('.team-next-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-next').trigger('click');
+    $('.team-slider .slick-next').trigger('click');
 });
 
 
