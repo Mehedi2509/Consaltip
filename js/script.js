@@ -5,8 +5,10 @@
 
         // preloader //
         $(window).on("load", function () {
-            $("#preloader").css({"visibility": "hidden"});
-            $("#preloader-status").delay(200).css({"visibility": "hidden"});
+            $("#preloader").fadeOut();
+            $("#preloader-status").delay(500).fadeOut("slow");
+            // $("#preloader").css({"visibility": "hidden"});
+            // $("#preloader-status").delay(200).css({"visibility": "hidden"});
             $("body").delay(200).css({
                 "overflow-x": "hidden"
             });
