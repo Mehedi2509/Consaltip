@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google font -->
-    <link href="https://fonts.cdnfonts.com/css/outfit" rel="stylesheet">
+  <!-- Google font -->
+  <link href="https://fonts.cdnfonts.com/css/outfit" rel="stylesheet">
 
   <!-- Bootstrap link code -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,78 +26,135 @@
 
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero-section text-white pb-5">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="preloader-status"></div>
+  </div>
 
-    <!-- Header section -->
-    <header class="p-3">
-      <div class="header-menu-area sticky-header bg-icon">
-        <div class="container-fulid">
-          <div class="row justify-content-between">
-            <div class="col-lg-12 p-0">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="logo">
-                  <a class="navbar-brand" href="#">
-                    <img src="images/Logo.png" alt="logo" width="100%"/>
+
+  <!-- Header section -->
+  <header class="p-3">
+    <div class="header-menu-area sticky-header bg-icon">
+      <div class="container-fulid">
+        <div class="row justify-content-between">
+          <div class="col-lg-12 p-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="logo">
+                <a class="navbar-brand" href="#">
+                  <img src="images/Logo.png" alt="logo" width="100%" />
+                </a>
+              </div>
+              <div class="menu">
+                <nav id="main-menu" class="main-menu">
+                  <ul>
+                    <li>
+                      <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Home Style 1</a></li>
+                        <li><a href="#">Home Style 2</a></li>
+                        <li><a href="#">Home Style 3</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                      <a href="#">Service <i class="fa-solid fa-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Service Page</a></li>
+                        <li><a href="#">Service Details Page</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Case Studies Details</a></li>
+                        <li><a href="#">Team Member</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">404</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Blogs Details</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-btn-wrapper">
+                <div class="header-btn">
+                  <a href="tel:+123-456-7890">
+                    <i class="fa-solid fa-phone-volume"></i> +(123) 456 7890
                   </a>
                 </div>
-                <div class="menu">
-                  <nav id="main-menu" class="main-menu">
-                    <ul>
-                      <li>
-                        <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Home Style 1</a></li>
-                          <li><a href="#">Home Style 2</a></li>
-                          <li><a href="#">Home Style 3</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">About</a></li>
-                      <li>
-                        <a href="#">Service <i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Service Page</a></li>
-                          <li><a href="#">Service Details Page</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Case Studies</a></li>
-                          <li><a href="#">Case Studies Details</a></li>
-                          <li><a href="#">Team Member</a></li>
-                          <li><a href="#">FAQ</a></li>
-                          <li><a href="#">404</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Blogs</a></li>
-                          <li><a href="#">Blogs Details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Contact Us</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="header-btn-wrapper">
-                  <div class="header-btn">
-                    <a href="tel:+123-456-7890">
-                      <i class="fa-solid fa-phone-volume"></i> +(123) 456 7890
-                    </a>
-                  </div>       
-                </div>
-                <div class="mobile-menu-bar">
-                  <button><i class="fa-solid fa-bars"></i></button>
-                </div>
+              </div>
+              <div class="mobile-menu-bar">
+                <button class="mobile-menu-toggle-btn"><i class="fa-solid fa-bars"></i></button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
+  <div class="sidebar-menu-area d-none">
+    <div class="sidebar-menu-wrapper">
+      <div class="sidebar-menu-heading">
+        <a href="#"><img src="images/footer-logo.png" alt="Logo" /></a>
+        <button id="sidebar-menu-close-btn" class="sidebar-menu-close-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="sidebar-menu-content">
+        <nav class="mobile-nav-menu">
+          <ul>
+            <li>
+              <a href="#">Home</i></a>
+              <ul class="mobile-dropdown-menu">
+                <li><a href="#">Home Style 1</a></li>
+                <li><a href="#">Home Style 2</a></li>
+                <li><a href="#">Home Style 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li>
+              <a href="#">Service</i></a>
+              <ul class="mobile-dropdown-menu">
+                <li><a href="#">Service Page</a></li>
+                <li><a href="#">Service Details Page</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Pages</i></a>
+              <ul class="mobile-dropdown-menu">
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Case Studies Details</a></li>
+                <li><a href="#">Team Member</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">404</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Blog</i></a>
+              <ul class="mobile-dropdown-menu">
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Blogs Details</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="body-overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white pb-5">
     <div>
       <div class="hero-slider">
         <div class="">
@@ -724,9 +781,15 @@
   <!-- fontawesome script code -->
   <script src="https://kit.fontawesome.com/33b18a8aca.js" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
