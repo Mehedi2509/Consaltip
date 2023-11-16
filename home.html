@@ -14,6 +14,7 @@
   <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
 
   <!-- Stylesheet link -->
+  <link href="css/meanmenu.min.css" rel="stylesheet" />
   <link href="css/index.css" rel="stylesheet" />
 
   <!-- slick slider -->
@@ -46,7 +47,7 @@
               </div>
               <div class="menu">
                 <nav id="main-menu" class="main-menu">
-                  <ul>
+                  <ul class="main-menu-ul">
                     <li>
                       <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
                       <ul class="dropdown-menu">
@@ -101,51 +102,16 @@
     </div>
   </header>
 
-  <div class="sidebar-menu-area d-none">
+  <div class="sidebar-menu-area">
     <div class="sidebar-menu-wrapper">
       <div class="sidebar-menu-heading">
-        <a href="#"><img src="images/footer-logo.png" alt="Logo" /></a>
         <button id="sidebar-menu-close-btn" class="sidebar-menu-close-btn"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div class="sidebar-menu-content">
-        <nav class="mobile-nav-menu">
-          <ul>
-            <li>
-              <a href="#">Home</i></a>
-              <ul class="mobile-dropdown-menu">
-                <li><a href="#">Home Style 1</a></li>
-                <li><a href="#">Home Style 2</a></li>
-                <li><a href="#">Home Style 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li>
-              <a href="#">Service</i></a>
-              <ul class="mobile-dropdown-menu">
-                <li><a href="#">Service Page</a></li>
-                <li><a href="#">Service Details Page</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Pages</i></a>
-              <ul class="mobile-dropdown-menu">
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Case Studies Details</a></li>
-                <li><a href="#">Team Member</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">404</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Blog</i></a>
-              <ul class="mobile-dropdown-menu">
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Blogs Details</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
+        <div class="sidebar-menu-logo">
+          <a href="#"><img src="images/footer-logo.png" alt="Logo" /></a>
+        </div>
+        <div class="mobile-nav-menu fix"></div>
       </div>
     </div>
   </div>
@@ -785,16 +751,12 @@
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Custom script file -->
+  <script src="js/jquery.meanmenu.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>

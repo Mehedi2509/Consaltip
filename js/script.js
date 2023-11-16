@@ -15,12 +15,29 @@
         });
 
 
+        // Moblie Menu
+        $('#main-menu').meanmenu({
+            meanMenuContainer: '.mobile-nav-menu',
+            meanScreenWidth: '991',
+            meanExpand: ['<i class="fal fa-plus"></i>'],
+
+        });
+
+
         // Mobile toggle button
         $(".mobile-menu-toggle-btn").on("click", function () {
             $(".sidebar-menu-area").addClass("active");
             $(".body-overlay").addClass("active");
         });
-        $(".menu-sidebar-close-btn").on("click", function () {
+
+        $("#sidebar-menu-close-btn").on("click", function () {
+            $(".sidebar-menu-area").removeClass("active");
+            $(".body-overlay").removeClass("active");
+        });
+
+
+        // Jquery Body Overlay
+        $(".body-overlay").on("click", function () {
             $(".sidebar-menu-area").removeClass("active");
             $(".body-overlay").removeClass("active");
         });
