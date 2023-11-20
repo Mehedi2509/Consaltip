@@ -161,29 +161,29 @@ header{
     margin: 0 25px;
 }
 
-.main-menu ul{
+.main-menu .main-menu-ul{
     display: flex;
     align-items: center;
     margin: auto;
 }
 
-.main-menu ul li{
+.main-menu .main-menu-ul li{
     list-style: none;
     padding: 25px;
     position: relative;
 }
 
-.main-menu ul li a{
+.main-menu .main-menu-ul li a{
    text-decoration: none;
    color: #fff;
    font-weight: 600;
 }
 
-.main-menu ul li a:hover{
+.main-menu .main-menu-ul li a:hover{
     color: #E0F780;
 }
 
-.main-menu ul li ul{
+.main-menu .main-menu-ul .dropdown-menu{
     padding: 0;
     width: 180px;
     height: auto;
@@ -197,10 +197,10 @@ header{
     overflow: hidden;
     visibility: hidden;
     transform: rotateX(-90deg);
-    transition: overflow 1s;
+    transition: all 0.3s ease-out;
 }
 
-.main-menu ul li:hover{
+.main-menu .main-menu-ul li:hover{
     .dropdown-menu{
         transform: rotateX(0deg);
         visibility: visible;
@@ -208,24 +208,48 @@ header{
     }
 }
 
-.main-menu ul li ul li{
+.main-menu .main-menu-ul .dropdown-menu li{
     list-style: none;
     padding: 8px 15px;
 }
 
 
-.main-menu ul li ul li a{
+.main-menu .main-menu-ul .dropdown-menu li a{
     color: #080f10;
     font-weight: 400;
 }
-.main-menu ul li ul li a:hover{
+.main-menu .main-menu-ul .dropdown-menu li a:hover{
     color: #080f10;
 }
 
-.main-menu ul li ul li:hover{
+.main-menu .main-menu-ul .dropdown-menu li:hover{
     background-color: #E0F780;
     transition: all 0.5s;
 
+}
+
+.main-menu .main-menu-ul .dropdown-menu .second-dropdown{
+    padding: 0;
+    width: 180px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    visibility: hidden;
+    /* transform: rotateX(-90deg); */
+    /* transition: overflow 1s; */
+    z-index: 99999999999;
+}
+
+.main-menu .main-menu-ul .dropdown-menu li:hover{
+    .second-dropdown{
+        visibility: visible;
+        transition: all 1s;
+    }
 }
 
 .header-btn{
@@ -290,7 +314,16 @@ header{
 .sidebar-menu-heading{
     position: absolute;
     right: 45px;
-    top: 45px;
+    top: 35px;
+}
+
+.sidebar-menu-close-btn{
+    width: 45px;
+    height: 45px;
+    background-color: #033F47;
+    border-radius: 50%;
+    color: white;
+    border: none;
 }
 
 .sidebar-menu-area .sidebar-menu-logo{
@@ -311,6 +344,13 @@ header{
     display: none;
 }
 
+.mobile-menu-toggle-btn{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 25px;
+}
+
 .mean-bar .meanmenu-reveal{
     display: none !important;
 }
@@ -329,6 +369,7 @@ a.meanmenu-reveal{
     position: relative;
     background-color: #fff;
     z-index: 999999;
+    margin-top: 20px;
 }
 
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked i{
@@ -378,28 +419,56 @@ a.meanmenu-reveal{
     width: 100%;
     list-style-type: none;
     display: block !important;
+    padding: 10px;
 }
 
-.mean-container .mean-nav ul li{
+.mean-container .mean-nav .main-menu-ul li{
     position: relative;
     float: left;
     width: 100%;
+    border-top: 1px solid #ebecee;
 }
 
 .mean-container .mean-nav ul li a{
     display: block;
     float: left;
-    padding: 10px 30px;
-    margin: 0;
+    padding: 10px;
+    margin: 0 0 0 20px;
     text-align: left;
     color: #575959;
-    border-top: 1px solid #ebecee;
     text-decoration: none;
     text-transform: capitalize;
     width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
 }
 .mean-container .mean-nav .main-menu-ul li ul{
     position: relative;
+}
+.mean-container .mean-nav .main-menu-ul li i{
+    display: none;
+}
+
+.mean-container .mean-nav .main-menu-ul li .mean-expand{
+    margin-right: 20px;
+    padding: 0 !important;
+    font-size: 30px !important;
+    font-weight: 300;
+    width: 45px;
+    height: 48px;
+}
+.mean-container .mean-nav .main-menu-ul li .mean-expand:hover{
+    background-color: #033F47;
+    color: white;
+}
+
+.mean-container .mean-nav .main-menu-ul .dropdown-menu{
+    border: none;
+}
+
+.mean-container .mean-nav .main-menu-ul .dropdown-menu li a{
+    padding: 10px 40px;
+    font-size: 18px;
 }
 /* 
 .mean-container .mean-nav ul li li a{
