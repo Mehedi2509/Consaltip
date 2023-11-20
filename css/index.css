@@ -44,43 +44,49 @@
 /* Common Button style */
 .common-btn-1{
     border: 1px solid #E0F780;
-    padding: 15px 25px;
+    padding: 18px 30px;
     background-color: #E0F780;
     border-radius: 5px;
     font-weight: 500;
+    transition: all 0.8s;
 }
 
 .common-btn-1:hover{
     background: none;
     border: 1px solid white;
     color: white;
+    transition: all 0.8s;
 }
 
 .common-btn-2{
     border: 1px solid white;
     color: white;
-    padding: 15px 25px;
+    padding: 18px 30px;
     background: none;
     border-radius: 5px;
     font-weight: 500;
+    transition: all 0.8s;
 }
 
 .common-btn-2:hover{
     border: 1px solid #E0F780;
     color: black;
     background-color: #E0F780;
+    transition: all 0.8s;
 }
 
 .common-btn-3{
     background-color: #E0F780;
     border-radius: 5px;
-    padding: 15px 25px;
+    padding: 18px 30px;
     border: none;
+    transition: all 0.8s;
 }
 
 .common-btn-3:hover{
     background-color: black;
     color: white;
+    transition: all 0.8s;
 }
 
 .slick-arrow{
@@ -591,6 +597,28 @@ a.meanmenu-reveal{
     100%{transform: rotate(180deg);}
 }
 
+.company-story div{
+    overflow: hidden;
+}
+
+.company-story div h1{
+    font-size: 50px;
+}
+.company-story div p{
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.company-story img{
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.company-story img:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
 
 /* ------------------------
       Service section
@@ -938,6 +966,7 @@ margin-bottom: 20px;
     padding: 15px;
     background-color: white;
     border-radius: 50%;
+    transition: all 0.8s;
 }
 
 .footer-social-icons a i:hover{
@@ -956,12 +985,20 @@ margin-bottom: 20px;
 .useful-link-menu li a{
     text-decoration: none;
     color: #575959;
+    font-size: 17px;
+    font-weight: 400;
+    transition: all 0.5s;
 }
 .useful-link-menu li a:hover{
-    scale: 50px;
+    margin-left: 2px;
+    color: black;
+    transition: all 0.5s;
 }
 .useful-link-menu li a span{
     margin-right: 8px;
+}
+.useful-link-menu li a span i{
+    font-size: 14px;
 }
 
 .footer-contact a{
@@ -980,12 +1017,14 @@ margin-bottom: 20px;
    justify-content: center;
    border: 1px solid #033F47;
    border-radius: 50%;
+   transition: all 0.8s;
 
 }
 
 .footer-contact i:hover{
     background-color: #E0F780;
-    border: none;
+    border: 1px solid #E0F780;
+    transition: all 0.8s;
 }
 
 .footer-newsletter{
@@ -1012,12 +1051,14 @@ margin-bottom: 20px;
     background-color: #E0F780;
     border: 1px solid #E0F780;
     font-weight: 500;
+    transition: all 0.8s;
 }
 
 .footer-newsletter button:hover{
     background: none;
     color: white;
     border: 1px solid white;
+    transition: all 0.8s;
 
 }
 
