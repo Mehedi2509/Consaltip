@@ -167,11 +167,53 @@ header{
         background: transparent;
 }
 
+.hero-slide{
+    width: 93%;
+    margin: 0 auto;
+}
+
+.hero-content h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.hero-content h1 span{
+    position: relative;
+}
+.hero-content h1 span img{
+    position: absolute;
+    right: 0;
+}
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
 header{
     background-color: #033F47;
     top: 0;
     width: 100%;
 }
+
+@media only screen and (max-width: 576px) {
+    .hero-content{
+        margin-bottom: 50px;
+    }
+    .hero-content h1{
+        font-size: 35px;
+    }
+    .hero-content p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .hero-content h1 span img{
+        width: 100%;
+    }
+}
+
+
+/*---------------------------
+      Header section 
+-----------------------------*/
 
 .sticky-header{
     margin: 0 25px;
@@ -210,7 +252,6 @@ header{
     background-color: white;
     border-top: 3px solid #E0F780;
     border-radius: 0 0px 5px 5px;
-    overflow: hidden;
     visibility: hidden;
     transform: rotateX(-90deg);
     transition: all 0.3s ease-out;
@@ -240,7 +281,7 @@ header{
 
 .main-menu .main-menu-ul .dropdown-menu li:hover{
     background-color: #E0F780;
-    transition: all 0.5s;
+    transition: all 0.8s;
 
 }
 
@@ -250,21 +291,21 @@ header{
     height: auto;
     display: block;
     position: absolute;
-    top: 40px;
-    left: 100px;
+    top: 0px;
+    right: -100%;
     background-color: white;
     border-radius: 5px;
     overflow: hidden;
     visibility: hidden;
-    /* transform: rotateX(-90deg); */
-    /* transition: overflow 1s; */
-    z-index: 99999999999;
+    transform: rotateX(-90deg);
+    transition: all 0.8s;
 }
 
 .main-menu .main-menu-ul .dropdown-menu li:hover{
     .second-dropdown{
         visibility: visible;
-        transition: all 1s;
+        transform: rotateX(0deg);
+        transition: all 0.8s;
     }
 }
 
@@ -486,40 +527,23 @@ a.meanmenu-reveal{
     padding: 10px 40px;
     font-size: 18px;
 }
-/* 
-.mean-container .mean-nav ul li li a{
-    width: 80%;
-    padding: 10px 60px;
-    border-top: 1px solid #ebecee;
-    text-shadow: none !important;
-    visibility: visible;
-}  */
-
-/* .mean-container .mean-nav ul li.mean-last a{
-    border-bottom: 0;
-    margin-bottom: 0;
-} */
-
-/* .mean-container .mean-nav ul li li li a{
-    width: 70%;
-    padding: 15%;
-}
-
-.mean-container .mean-nav ul li li li li a{
-    width: 60%;
-    padding-left: 20%;
-}
-
-.mean-container .mean-nav ul li li li li li a {
-    width: 50%;
-    padding-left: 25%; 
-} */
 
 .mean-container .mean-nav ul li a:hover {
     background: #2c2e3d;
     background: rgba(255, 255, 255, 0.1); 
 }
 
+.mean-container .mean-nav .main-menu-ul .dropdown-menu .second-dropdown li a{
+    padding: 5px 0px 5px 80px;
+}
+
+/*---------------------------
+      Header section 
+-----------------------------*/
+
+/*----------------------------
+         Body Overlay 
+------------------------------*/
 .body-overlay{
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
@@ -548,7 +572,7 @@ a.meanmenu-reveal{
 --------------------- */
 .about-us{
     padding-top: 180px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     position: relative;
 }
 
@@ -607,26 +631,72 @@ a.meanmenu-reveal{
     100%{transform: rotate(180deg);}
 }
 
-.company-story div{
-    overflow: hidden;
+.company-story{
+    margin-bottom: 80px;
 }
 
-.company-story div h1{
-    font-size: 50px;
+.company-story div, .why-choose-us div{
+    overflow: hidden;
+
 }
-.company-story div p{
+
+.company-story div h1, .why-choose-us h1{
+    font-size: 55px;
+    line-height: 68px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.company-story div p, .why-choose-us div p{
     font-size: 20px;
     margin: 25px 0;
 }
 
-.company-story img{
+.company-story img, .why-choose-us img{
     transform: scale(1);
     transition: all 1s;
 }
 
-.company-story img:hover{
+.company-story img:hover, .why-choose-us img:hover{
     transform: scale(1.05);
     transition: all 1s;
+}
+
+.about-content{
+    margin-left: 40px;
+}
+
+.about-content h1 span {
+    position: relative;
+}
+.about-content h1 span img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+
+.about-content h2{
+    font-size: 43px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+    .company-story div h1, .why-choose-us h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .about-content{
+        margin: 30px 0;
+    }
+    
+    .about-content h1 span {
+        position: relative;
+    }
+    .about-content h1 span img{
+        width: 100%;
+    }
+    .about-content h2{
+        font-size: 25px;
+    }
 }
 
 
@@ -950,6 +1020,23 @@ margin-bottom: 20px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.brand-slider img{
+    transform: scale(1);
+    transition: all 0.8s;
+}
+
+.brand-slider img:hover{
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+@media only screen and (max-width: 576px) {
+    .brand-logos{
+        justify-content: center;
+
+    }
 }
 
 /* Footer Section */
