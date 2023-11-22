@@ -4,6 +4,8 @@
     background: #F8F8F1;
     font-family: 'Outfit', sans-serif;
     transition: all 0.5s;
+    margin: 0;
+    padding: 0;
 }
 
 #preloader{
@@ -101,6 +103,11 @@
 header{
     position: fixed;
     z-index: 999;
+    background-color: #033F47;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-section{
@@ -188,11 +195,6 @@ header{
     margin-bottom: 50px;
 }
 
-header{
-    background-color: #033F47;
-    top: 0;
-    width: 100%;
-}
 
 @media only screen and (max-width: 576px) {
     .hero-content{
