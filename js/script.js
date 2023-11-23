@@ -83,7 +83,7 @@
         $('.services-slider').slick({
             dots: false,
             infinite: true,
-            speed: 1000,
+            speed: 2000,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
@@ -119,7 +119,7 @@
         $('.case-slider').slick({
             dots: false,
             infinite: true,
-            speed: 1000,
+            speed: 2000,
             slidesToShow: 2,
             slidesToScroll: 1,
             arrows: true,
@@ -163,7 +163,7 @@
         $('.testimonial-slider').slick({
             dots: false,
             infinite: true,
-            speed: 1000,
+            speed: 2000,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
@@ -208,7 +208,7 @@
         $('.team-slider').slick({
             dots: true,
             infinite: true,
-            speed: 1000,
+            speed: 2000,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: true,
@@ -258,7 +258,7 @@
         $('.brand-slider').slick({
             dots: false,
             infinite: true,
-            speed: 300,
+            speed: 1000,
             slidesToShow: 5,
             slidesToScroll: 1,
             arrows: false,

@@ -646,7 +646,6 @@ a.meanmenu-reveal{
     font-size: 55px;
     line-height: 68px;
     font-weight: 600;
-    letter-spacing: 0.02em;
 }
 .company-story div p, .why-choose-us div p{
     font-size: 20px;
@@ -706,7 +705,24 @@ a.meanmenu-reveal{
       Service section
 --------------------------- */
 .service-title{
-    width: 50%;
+    width: 70%;
+}
+.service-title h1{
+    font-size: 57px;
+    line-height: 70px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.service-title h1 span{
+    position: relative;
+}
+.service-title h1 span img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+.service-title p{
+    font-size: 20px;
 }
 
 .services-slider .slick-track{
@@ -736,16 +752,54 @@ a.meanmenu-reveal{
 }
 
 
+@media only screen and (max-width: 576px) {
+    .service-title{
+        width: 100%;
+    }
+    .service-title h1{
+        font-size: 32px;
+        line-height: 50px;
+
+    }
+    .service-title h1 span img{
+        width: 80%;
+    }
+    .service-title p{
+        font-size: 14px;
+    }
+}
+
+
 /* ------------------
    Our work process
 -------------------- */
 .efficient-process{
     background-color: #f8f8f1;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .efficient-process-title{
-    width: 50%;
+    width: 70%;
+}
+
+.efficient-process-title h1{
+    font-size: 57px;
+    line-height: 70px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.efficient-process-title h1 span{
+    position: relative;
+}
+.efficient-process-title h1 span img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+}
+.efficient-process-title p{
+    font-size: 20px;
+    color: gray;
 }
 
 .accordion{
@@ -809,12 +863,97 @@ a.meanmenu-reveal{
     transition: border 0.8s;
 }
 
-
 .free-consultation{
+    margin-bottom: 130px;
+}
+
+.free-consultation-content{
     background-image: url(../images/free-consultation-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-color: #033F47;
     padding: 0;
-    margin-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.free-consultation-content .consultation-content{
+    width: 80%;
+    margin: auto;
+}
+
+.free-consultation-content h1{
+    font-size: 57px;
+    line-height: 70px;
+    color: white;
+    font-weight: 600;
+}
+.free-consultation-content h1 span{
+    position: relative;
+}
+.free-consultation-content h1 span img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+.free-consultation-content p{
+    font-size: 20px;
+    color: white;
+}
+
+.free-consultation-img, .efficient-process-img{
+    transition: all 0.5s;
+}
+.free-consultation-img:hover, .efficient-process-img:hover{
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .efficient-process-title{
+        width: 90%;
+    }
+    
+    .efficient-process-title h1{
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .efficient-process-title h1 span{
+        position: relative;
+    }
+    .efficient-process-title h1 span img{
+        bottom: -5px;
+    }
+    .efficient-process-title p{
+        font-size: 16px;
+    }
+
+    .free-consultation{
+        margin-top: 60px;
+    }
+    .free-consultation-content .consultation-content{
+        padding: 80px 0;
+    }
+    .free-consultation-content h1{
+        width: 70%;
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .free-consultation-content h1 span{
+        position: relative;
+    }
+    .free-consultation-content h1 span img{
+        width: 90%;
+        bottom: -10px;
+    }
+    .free-consultation-content p{
+        font-size: 16px;
+        color: white;
+    }
 }
 
 
@@ -931,6 +1070,21 @@ margin-bottom: 20px;
     padding: 80px 0 50px;
 }
 
+.team-section h1{
+    font-size: 57px;
+    line-height: 70px;
+    font-weight: 600;
+}
+.team-section h1 span{
+    position: relative;
+}
+
+.team-section h1 span img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+
 .case-prev-btn, .case-next-btn{
     width: 60px;
     height: 60px;
@@ -938,10 +1092,12 @@ margin-bottom: 20px;
     border: 1px solid white;
     color: white;
     border-radius: 50%;
+    transition: all 0.8s ease-out;
 }
 
 .case-prev-btn:hover, .case-next-btn:hover{
     background: #E0F780;
+    border: 1px solid #E0F780;
     border: none;
     transition: all 1s;
 }
@@ -963,25 +1119,51 @@ margin-bottom: 20px;
     margin: 0 2px;
 }
 
-.team-slider .slick-slide:hover{
-    transform: scale(1.03);
-    transition: all 0.5s;
+.top-team-slide-content{
+    position: absolute;
+    background-color: #033F47;
+    opacity: 0.5;
+    visibility: hidden;
+    transition: all 0.8s ease-out;
+}
 
-    .team-slide-content{
-        position: absolute;
-        top: 215px;
+.top-team-slide-content .team-icons a:hover, .top-team-slide-content h3:hover{
+    color: #E0F780;
+    transition: all 0.5s;
+}
+
+.bottom-team-slide-content{
+    visibility: visible;
+    transition: all 0.2s step-end;
+}
+
+.team-slider .slick-slide{
+    transition: all 0.8s ease-out;
+}
+
+.team-slider .slick-slide:hover{
+    transform: scale(1.04);
+    transition: all 0.8s ease-out;
+    
+    .top-team-slide-content{
+        visibility: visible;
+        bottom: 0;
+        width: 100%;
         background-color: #033F47;
         opacity: 0.9;
         color: white;
-        width: 100%;
+        transition: all 0.5s ease-out;
     }
 
-    .team-icons a{
+    .top-team-slide-content .team-icons a{
         color: white;
     }
-    .team-icons a:hover{
-        color: #E0F780;
+
+    .bottom-team-slide-content{
+        visibility: hidden;
+        transition: all 0.2s step-end;
     }
+
 }
 
 
@@ -1008,6 +1190,18 @@ margin-bottom: 20px;
     height: 25px;
     border-radius: 50%;
     border: none;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .team-section h1{
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .team-section h1 span img{
+        width: 100%;
+    }
 }
 
 
@@ -1207,10 +1401,6 @@ margin-bottom: 20px;
     }
 
     .service-title{
-        width: 100%;
-    }
-
-    .efficient-process-title{
         width: 100%;
     }
 
