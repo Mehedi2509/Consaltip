@@ -1174,16 +1174,68 @@ transition: all 0.5s;
 ---------------------------*/
 
 
-/* Blog & Articles Section */
+/*-------------------------------
+     Blog & Articles Section 
+---------------------------------*/
 .blog-articles-section{
     background-color: #033F47;
-    padding: 100px 0;
+    padding: 120px 0;
+}
+
+.blog-card img{
+    transition: all 0.5s;
+}
+
+.blog-card img:hover{
+    transform: scale(1.04);
+    transition: all 0.5s;
+}
+
+.blog-section-title{
+    margin-bottom: 60px;
+}
+.blog-section-title h1{
+    font-size: 57px;
+    font-weight: 600;
+    line-height: 70px;
+    color: white;
+    width: 70%;
+}
+.blog-section-title h1 span{
+    position: relative;
+}
+.blog-section-title h1 span img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 90%;
 }
 
 
+@media only screen and (max-width: 576px) {
+    .blog-articles-section{
+        padding: 80px 0;
+    }
+
+    .blog-section-title{
+        margin-bottom: 60px;
+    }
+    .blog-section-title h1{
+        font-size: 34px;
+        line-height: 50px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .blog-section-title h1 span img{
+        bottom: -5px;
+
+    }
+}
 
 
-/* Team Section */
+/*-------------------------------
+         Team Section 
+--------------------------------*/
 .team-section{
     padding: 80px 0 50px;
 }
