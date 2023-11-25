@@ -775,7 +775,7 @@ a.meanmenu-reveal{
 -------------------- */
 .efficient-process{
     background-color: #f8f8f1;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .efficient-process-title{
@@ -786,7 +786,8 @@ a.meanmenu-reveal{
     font-size: 57px;
     line-height: 70px;
     font-weight: 600;
-    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto 20px;
 }
 .efficient-process-title h1 span{
     position: relative;
@@ -921,6 +922,7 @@ a.meanmenu-reveal{
     .efficient-process-title h1{
         font-size: 32px;
         line-height: 50px;
+        width: 100%;
     }
     .efficient-process-title h1 span{
         position: relative;
@@ -962,11 +964,29 @@ a.meanmenu-reveal{
 ------------------------ */
 .case-studies{
     background-color: #033F47;
-    padding: 80px 0;
+    padding: 110px 0;
 }
 
 .case-studies-title{
-    width: 50%;
+    width: 60%;
+}
+.case-studies-title h1{
+    font-size: 57px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+.case-studies-title h1 span{
+    position: relative;
+}
+.case-studies-title h1 span img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+.case-studies-title p{
+    font-size: 20px;
+    color: white;
 }
 
 .case-slider{
@@ -983,19 +1003,25 @@ overflow: hidden;
 text-overflow: ellipsis;
 margin-top: 30px;
 margin-bottom: 20px;
+text-decoration: none;
+transition: all 0.5s;
 }
 
 .case-slider h3:hover{
     text-decoration: underline;
+    transition: all 0.5s;
 }
 
 .case-slider .slick-slide{
     margin: 0 25px;
 }
 
+.case-slider .slick-slide img{
+    transition: all 0.5s;
+}
 .case-slider .slick-slide img:hover{
     transform: scale(1.02);
-    transition: all 0.6s;
+    transition: all 0.5s;
 
 }
 
@@ -1007,7 +1033,6 @@ margin-bottom: 20px;
     color: #033F47;
     border-radius: 50%;
 }
-
 .team-prev-btn:hover, .team-next-btn:hover{
     background: #E0F780;
     color: #033F47;
@@ -1015,14 +1040,57 @@ margin-bottom: 20px;
     transition: all 1s;
 }
 
+@media only screen and (max-width: 576px) {
+    .case-studies-title{
+        width: 100%;
+    }
+    .case-studies-title h1{
+        font-size: 32px;
+    }
+    .case-studies-title h1 span img{
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        width: 90%;
+    }
+    .case-studies-title p{
+        font-size: 14px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+    
+}
+/* ----------------------
+      Case studies
+------------------------ */
 
-/* testimonial section */
+/*-------------------------
+    testimonial section 
+---------------------------*/
 .testimonial{
-    margin: 100px auto;
+    margin: 110px auto 145px;
+}
+
+.testimonials-title{
+    margin-bottom: 80px;
+}
+.testimonials-title h1{
+    font-size: 57px;
+    font-size: 600;
+
+}
+.testimonials-title h1 span{
+    position: relative;
+}
+.testimonials-title h1 span img{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 90%;
 }
 
 .testimonial-slider{
-    margin: 50px 0;
+    margin: 100px 0;
 }
 
 .testimonial-slider .slick-arrow::after{
@@ -1048,12 +1116,62 @@ margin-bottom: 20px;
     transition: all 1s;
 }
 
+.testimonial-img img{
+    background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 80%;
+}
+
+.testimonial-slider-content div i{
+    font-size: 14px;
+    color: #033F47;
+}
 .testimonial-slider-content h5{
-    width: 70%;
+    width: 90%;
     text-align: justify;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+.testimonial-slider-content p{
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 
+@media only screen and (max-width: 576px) {
+    .testimonials-title h1{
+        font-size: 34px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .testimonials-title h1 span{
+        position: relative;
+    }
+    .testimonials-title h1 span img{
+        bottom: -5px;
+    }
+
+    .testimonial-img img{
+        margin: 20px auto;
+    }
+    .testimonial-slider-content h5{
+        width: 80%;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+    }
+    .testimonial-slider-content p{
+        font-size: 16px;
+    }
+}
+
+/*-------------------------
+    testimonial section 
+---------------------------*/
 
 
 /* Blog & Articles Section */
