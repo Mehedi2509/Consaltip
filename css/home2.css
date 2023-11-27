@@ -389,8 +389,24 @@ a.meanmenu-reveal{
 --------------------------------*/
 .hero-section-2{
     background-color: #F8F8F1;
-    padding: 100px 0;
 }
+
+.single-slide{
+    position: relative;
+    z-index: 2;
+    background-size: cover;
+    background-position: center center;
+    padding: 94px 48px 64px;
+
+}
+
+.slide-container{
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 .hero-slide-content h1{
     font-size: 76px;
     line-height: 92px;
@@ -434,6 +450,200 @@ a.meanmenu-reveal{
     background: #E0F780;
     border: 1px solid #E0F780;
     transition: 0.8s;
+}
+
+.hero-slide-img{
+    border-radius: 0 0 100px 0;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+    margin: 30px 0;
+}
+.hero-slide-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #080f10;
+    border-radius: 0 0 100px 0;
+    margin: 25px 0 0 25px;
+}
+
+.hero-slide-img img{
+    position: relative;
+    z-index: 3;
+    border-radius: 0 0 100px 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.certified{
+    position: absolute;
+    top: 31px;
+    left: 0;
+    transform: translate(-50%, 0);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgba(224, 247, 128, 0.5);
+    width: 135px;
+    height: 135px;
+    border-radius: 100px;
+    z-index: 5;
+}
+.certified i{
+    color: #080f10;
+    font-size: 34px;
+    position: absolute;
+}
+.certified .rounded-text{
+    width: 115px;
+    height: 115px;
+    text-transform: uppercase;
+    transform: rotate(-106deg);
+    color: #fff;
+    font-weight: 400;
+    z-index: 10;
+    font-family: "Outfit", sans-serif;
+}
+.certified .rotating{
+    animation: rotating 12s linear infinite;
+}
+@keyframes rotating{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+.hero-slider-2 .slider-arrow-btn{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 99;
+    background-color: transparent;
+    color: #828282;
+    border: 1px solid #828282;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.hero-slider-2 .slider-arrow-btn:hover{
+    background-color: #E0F780;
+    border: #E0F780;
+    transition: all 0.8s;
+}
+
+.hero-slider-2 .slider-arrow-btn.prev-btn{
+    left: 0;
+    margin-left: 30px;
+}
+.hero-slider-2 .slider-arrow-btn.next-btn{
+    right: 0;
+    margin-right: 30px;
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .hero-slider-2 .slider-arrow-btn{
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 100%;
+        font-size: 18px;
+    }
+    .hero-slider-2 .slider-arrow-btn.prev-btn{
+        left: 45%;
+        margin-left: 0;
+    }
+    .hero-slider-2 .slider-arrow-btn.next-btn{
+        right: 45%;
+        margin-right: 0;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    
+}
+@media only screen and (min-width: 561px) and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 560px) {
+    
+    .single-slide{
+        position: relative;
+        z-index: 2;
+        background-size: cover;
+        background-position: center center;
+        padding: 10px;
+        overflow: hidden;
+    
+    }
+    .hero-slide-content-btn-2, .hero-slide-content-btn-1{
+        padding: 11px 20px;
+
+    }
+    .hero-slide-img{
+        width: 80%;
+        margin: 30px auto;
+    }
+    .hero-slide-img::before{
+        position: relative;
+        border: none;
+    }
+    
+    .hero-slide-content{
+        text-align: center;
+    }
+    .hero-slide-content h1{
+        font-size: 34px;
+        line-height: 50px;
+    }
+    .hero-slide-content p{
+        font-size: 14px;
+        margin: 20px 0 40px;
+    
+    }
+
+    .certified{
+        width: 70px;
+        height: 70px;
+        top: 50px;
+    }
+    .certified i{
+        font-size: 20px;
+    }
+    .certified .rounded-text{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .hero-slider-2 .slider-arrow-btn{
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 100%;
+        font-size: 18px;
+    }
+    .hero-slider-2 .slider-arrow-btn.prev-btn{
+        left: 35%;
+        margin-left: 0;
+    }
+    .hero-slider-2 .slider-arrow-btn.next-btn{
+        right: 35%;
+        margin-right: 0;
+    }
 }
 
 /*-------------------------------

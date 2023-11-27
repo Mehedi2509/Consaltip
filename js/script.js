@@ -82,16 +82,18 @@
         // Hero section 2 //
 
         $('.hero-slider-2').slick({
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 2000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             loop: true,
             autoplay: true,
             autoplaySpeed: 5000,
             rtl: false,
+            prevArrow: "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-arrow-left'></i></button>",
+            nextArrow: "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-arrow-right'></i></button>",
             responsive: [{
                     breakpoint: 1024,
                     settings: {
