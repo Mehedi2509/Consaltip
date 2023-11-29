@@ -1,0 +1,113 @@
+.our-story {
+  padding: 120px 0;
+}
+
+.company-story-img-gallery .img-wrapper {
+  overflow: hidden;
+}
+.company-story-img-gallery .img-wrapper img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.company-story-img-gallery .img-wrapper img:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+.company-story-img-gallery .img-3 {
+  margin-top: 70px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .company-story-img-gallery .img-3 {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .company-story-img-gallery .img-3 {
+    margin-top: 0;
+  }
+}
+
+.story-content {
+  width: 83%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .story-content {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .story-content {
+    width: 100%;
+    margin-top: 80px;
+  }
+}
+.story-content h1 {
+  font-size: 57px;
+  line-height: 68px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .story-content h1 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+}
+.story-content h1 span {
+  position: relative;
+}
+.story-content h1 span img {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 90%;
+}
+.story-content p {
+  font-size: 20px;
+  margin: 20px 0 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .story-content p {
+    font-size: 14px;
+  }
+}
+.story-content h2 {
+  font-size: 43px;
+  line-height: 52px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .story-content h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+.story-content div span {
+  font-size: 18px;
+  line-height: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .story-content div span {
+    font-size: 14px;
+  }
+}
+.story-content button {
+  font-size: 18px;
+  padding: 16px 32px;
+  background-color: #E0F780;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .story-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+.story-content button:hover {
+  background-color: #080f10;
+  color: white;
+  transition: all 0.8s;
+}

@@ -1,0 +1,89 @@
+// Import files
+@import '../mixin';
+
+
+
+.our-story{
+    padding: 120px 0;
+}
+.company-story-img-gallery{
+    .img-wrapper {
+        overflow: hidden;
+        img{
+            width: 100%;
+            transform: scale(1);
+            transition: all 0.5s ease;
+            &:hover{
+                transform: scale(1.03);
+                transition: all 0.5s ease;
+            }
+        }
+    }
+    .img-3{
+        margin-top: 70px;
+
+        @include md{
+            margin-top: 0;
+        }
+        @include lg{
+            margin-top: 0;
+        }
+    }
+}
+.story-content{
+    width: 83%;
+    @include md{
+        width: 100%;
+        margin-top: 50px;
+    }
+    @include lg{
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    h1{
+        font-size: 57px;
+        line-height: 68px;
+        font-weight: 600;
+        @include sm{
+            font-size: 34px;
+            line-height: 50px;
+        }
+
+        span{
+            position: relative;
+            img{
+                position: absolute;
+                right: 0;
+                bottom: -10px;
+                width: 90%;
+            }
+        }
+    }
+    p{
+        font-size: 20px;
+        margin: 20px 0 40px;
+        @include sm{
+            font-size: 14px;
+        }
+    }
+    h2{
+        font-size: 43px;
+        line-height: 52px;
+        font-weight: 600;
+        @include sm{
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+    div span{
+        font-size: 18px;
+        line-height: 30px;
+        @include sm{
+            font-size: 14px
+        }
+    }
+    button{
+        @include btnYellow;
+    }
+}
